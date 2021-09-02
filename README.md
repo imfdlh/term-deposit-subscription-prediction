@@ -28,7 +28,7 @@ The main objective can be broken down into 4:
 4. Predict an input of a new client based on the deployed site.
 
 # EDA
-## Numerical Features
+**Numerical Features**
 - Customer who subscribed has a greater duration during the last contact by the bank which is approximately ~449 seconds or ~7.5 minutes. Customer who didn't subscribe has a lower duration which is ~165 seconds or ~2.7 minutes. This is consistent with the dataset description of the duration variable where those who have duration 0 didn't subscribe to the term deposit.
 - Customer who subscribed and didn't subscribe has the same median number of contacts performed during this campaign. But we also can conclude that the maximum number of contacts performed for the customer who ends up subscribed is lower.
 - The pdays features are the number of days that passed by after the client was last contacted from a previous campaign. As stated in the dataset description, this feature has an extremely high value at the positive value range (999) that indicates that the client was not previously contacted. This affected the whole distribution, we can't see the real median for those who have been contacted who end up subscribed/didn't subscribe.
@@ -38,7 +38,7 @@ The main objective can be broken down into 4:
 - cons_conf_idx is a consumer confidence index that is aggregated monthly. It measures how optimistic or pessimistic consumers are regarding their expected financial situation. The majority falls within the range of -20.9 to . The median of those who decided to subscribe is slightly greater than the median who didn't subscribe.
 - euribor3m (Euro Interbank Offered Rate) is the Euribor rates are based on the average interest rates at which a large panel of European banks borrow funds from one another. This feature is aggregation of 3 month rate. This feature range is really differs compared to the others attributes that contains social and economic information. The majority falls within the range of 0.634 to 50.45. The median of those who decided to subscribe is slightly smaller than the median who didn't subscribe.
 
-## Categorical Features
+**Categorical Features**
 - The job features has a variety of ratio between its category. There is a student and retired who seems to have a high ratio that subscribed to the product. After cross-check with the absolute value in the previous plot, we found out that the total amount of people who falls into this category is low compared to other categories that have a greater total of people within groups.
 - For the education features, those who have the top 2 highest ratios are also coming from categories that have less total of people within the group. Unlike the previous top 2 ratio, the 3rd-5th highest ratio is coming from categories that have a greater total of people within its group.
 - The majority of people who don't have default credit, have the highest ratio of people who subscribed to the term deposit.

@@ -6,7 +6,7 @@ https://fadilah-milestone1p1.herokuapp.com/
 
 Template by Fadilah, powered by Bootstrap v5.1.
 
-# Source
+# Data Source
 The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit (variable y).
 
 Source: UCI ML Repo > <a href="https://archive.ics.uci.edu/ml/datasets/Bank+Marketing">Bank Marketing Data Set</a>
